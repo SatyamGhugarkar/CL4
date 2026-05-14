@@ -1,0 +1,67 @@
+PROBLEM STATEMENT: -
+Set up and Configuration of Hadoop Using CloudEra/ Google Cloud BigQuery. Databricks Lakehouse
+Platform. Snowflake, Amazon Redshift
+
+OBJECTIVE:
+1. Set up a multi-node Hadoop cluster using Cloudera Manager And Configure Hadoop Distributed
+File System (HDFS) for distributed storage.
+2. Create a Google Cloud project and enable BigQuery API and Configure billing and access controls.
+3. Create a Databricks workspace and configure clusters.
+4. Create a Snowflake account and configure access controls.
+5. Launch and configure an Amazon Redshift cluster.
+Software Requirements:
+Cloudera Manager Server, Google Cloud Platform account and SDK for command-line tools ,
+Databricks account and Apache Spark environment , Snowflake account and UI access , Amazon
+Redshift cluster , AWS account with permissions and JDBC/ODBC driver.
+Hardware Requirements:
+• Network connectivity, Storage for Hadoop Distributed File System (HDFS).
+• Amazon Redshift, Snowflake is a cloud-based service, Databricks are provides a managed
+environment, no specific hardware requirements.
+
+THEORY:
+Setting up and configuring Hadoop using Cloudera, Google Cloud BigQuery, Databricks Lakehouse
+Platform, Snowflake, and Amazon Redshift involves different procedures for each platform. Below, I'll
+provide a brief overview and the general steps for setting up each one. Please note that detailed setup
+and configuration steps can vary based on the specific version and updates of these platforms.
+
+•	Hadoop Setup: 
+Download and Install Hadoop: 
+Visit the Apache Hadoop website and download the version you want to use: [Hadoop 
+Downloads](http://hadoop.apache.org/releases.html) Follow the installation instructions provided with the Hadoop distribution. 
+
+Configure Hadoop: 
+Modify the `core-site.xml`, `hdfs-site.xml`, and other configuration files as needed. Configure the Hadoop environment variables. 
+ 
+Start Hadoop Services: 
+Use the `start-dfs.sh` and `start-yarn.sh` scripts to start the Hadoop Distributed File System (HDFS) and Yet Another Resource Negotiator (YARN). 
+ 
+•	Google Cloud BigQuery Setup: 
+1.	Create a Google Cloud Platform (GCP) Project: 
+Go to the [Google Cloud Console](https://console.cloud.google.com/). Create a new project. 
+ 
+2.	Enable BigQuery API: 
+In the GCP Console, navigate to "APIs & Services" > "Library". Enable the BigQuery API. 
+ 
+3.	Set Up Authentication: 
+Create service account credentials with BigQuery access. Download the JSON key file and set the `GOOGLE_APPLICATION_CREDENTIALS` environment variable. 
+ 
+•	Databricks Lakehouse Platform Setup: 
+ 
+1.	Create a Databricks Account: 
+Sign up for a Databricks account: [Databricks](https://databricks.com/try-databricks) 
+ 
+2.	Configure Databricks Workspace: 
+Create a Databricks workspace. Configure clusters, libraries, and other settings as needed. 
+ 
+3.	Connect to Data Sources: Connect Databricks to your data sources, such as storage accounts or databases. 
+
+Amazon Redshift Setup: 
+1.	Create an AWS Account: Sign up for an AWS account: [AWS Signup] (https://aws.amazon.com/) 
+ 
+2.	Create an Amazon Redshift Cluster: In the AWS Management Console, navigate to Amazon Redshift. Create a new Redshift cluster. 
+ 
+3.	Configure Redshift: Set up databases, tables, and users as needed. Configure security groups and network settings. 
+
+CONCLUSION:
+In this way we have Set up and Configuration Hadoop Using CloudEra/ Google Cloud BigQuery,
+Databricks Lakehouse Platform, Snowflake, Amazon Redshift.

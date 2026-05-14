@@ -1,0 +1,50 @@
+PROBLEM STATEMENT:
+To develop a MapReduce program to analyse Titanic ship data, focusing on calculating the average
+age of deceased males and determining the count of female casualties in each class.
+
+OBJECTIVE:
+• Develop a MapReduce program for analysing Titanic ship data.
+• Compute the average age of males who died in the tragedy.
+• Determine the number of female casualties in each class.
+• Understand and implement the key components of MapReduce: Mapper and Reducer functions.
+
+Hardware Requirements
+• A Hadoop cluster for distributed computing.
+• Sufficient computational resources on the cluster to handle the input file.
+
+Software Requirements
+• Hadoop Installation: Ensure that Hadoop is installed and configured on the cluster.
+• Java Development Kit (JDK): MapReduce programs are typically written in Java, so JDK is required
+for development.
+• Text Editor or Integrated Development Environment (IDE): Use a text editor or IDE to write and edit
+the MapReduce program.
+• Titanic Ship Data: The dataset containing information about passengers on the Titanic.
+
+Theory
+• Hadoop, a pioneering open-source framework, serves as the bedrock for processing vast datasets in
+parallel across expansive clusters of commodity hardware. It derives inspiration from Google's
+infrastructure and is widely utilized, especially in the realm of big data applications.
+• In the context of MapReduce, a pivotal paradigm within Hadoop, the workflow involves
+disassembling colossal datasets into manageable fragments. This segmentation facilitates independent
+processing through map tasks, fostering efficient parallel computation. Subsequently, a reduction phase
+orchestrates the synthesis of these processed chunks, employing techniques such as speculative
+execution for continuous progress and checkpointing for restarting from intermediate stages in case of failures. In the Map phase, the input data is divided into smaller chunks and processed independently
+in parallel across multiple nodes in a distributed computing environment. Each chunk is transformed or
+“mapped” into key-value pairs by applying a user-defined function. The output of the Map phase is a
+set of intermediate key-value pairs.
+• Input and Output types of a MapReduce job: (input) -> map -> -> combine -> -> reduce -> (output)
+• MapReduce allows for efficient processing of large-scale datasets by leveraging parallelism and
+distributing the workload across a cluster of machines. It simplifies the development of distributed data
+processing applications by abstracting away the complexities of parallelization, data distribution, and
+fault tolerance, making it an essential tool for big data processing in the Hadoop ecosystem.
+• The Titanic dataset encapsulates a rich array of information about passengers on the ill-fated voyage.
+Key attributes include passenger class, gender, age, and survival status. This multifaceted dataset
+serves as a poignant historical record, offering insights into the societal impact of the tragedy. Our
+MapReduce exploration aims to glean nuanced details from this dataset, shedding light on the human
+dimension of this historical event.
+
+CONCLUSION:
+In this way we have develop a MapReduce program to analyse Titanic ship data, focusing on
+calculating the average age of deceased males and determining the count of female casualties in each
+class.
+

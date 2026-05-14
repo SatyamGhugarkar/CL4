@@ -1,0 +1,79 @@
+PROBLEM STATEMENT
+Perform the data clustering algorithm using any Clustering algorithm.
+
+OBJECTIVE
+Students should be able understand the concept of data clustering and different data clustering
+algorithm.
+
+THEORY
+Data clustering
+ Cluster analysis or simply clustering is the process of partitioning a set of data objects (or
+observations) into subsets.
+ Each subset is a cluster, such that objects in a cluster are similar to one another, yet dissimilar
+to objects in other clusters.
+ The set of clusters resulting from a cluster analysis can be referred to as a clustering. In this
+context, different clustering methods may generate different clustering on the same data set.
+The partitioning is not performed by humans, but by the clustering algorithm.
+ Cluster analysis has been widely used in many applications such as image pattern recognition,
+Web search, biology, and security
+
+k-means:
+K-Means is an unsupervised machine learning algorithm used for clustering similar data points into groups called clusters. It groups the data based on similarity without using labeled output data.
+
+The algorithm divides the dataset into K clusters, where K is a predefined number. Each cluster has a centroid, which represents the center of that cluster. Data points are assigned to the nearest centroid based on distance.
+
+K-Means works iteratively to minimize the distance between data points and their cluster centroids.
+
+Steps of K-Means Algorithm
+1. Load the dataset.
+2. Choose the number of clusters (K).
+3. Select random centroids.
+4. Calculate distance between data points and centroids.
+5. Assign data points to the nearest cluster.
+6. Recalculate cluster centroids.
+7. Repeat until centroids do not change.
+
+Advantages
+1. Simple and fast algorithm.
+2. Works well for large datasets.
+3. Easy to implement.
+
+Disadvantages
+1. Need to specify K value manually.
+2. Sensitive to outliers.
+3. Different initial centroids may give different results.
+
+Applications
+Customer segmentation
+Image compression
+Market analysis
+Pattern recognition
+Document clustering
+
+Important Terms
+1. Cluster → Group of similar data points
+2. Centroid → Center point of a cluster
+3. K → Number of clusters
+
+Methods:
+The Partitioning method is a clustering technique that divides a dataset into a fixed number of clusters, where each data point belongs to only one cluster. It groups similar data points together based on distance or similarity. K-Means Clustering is the most common partitioning algorithm.
+
+The Hierarchical method is a clustering technique that forms clusters in a tree-like structure called a dendrogram by repeatedly merging or splitting data points based on similarity. Agglomerative Clustering is a common hierarchical clustering algorithm.
+
+CONCLUSION
+In this way we have explored the concept of data clustering and implemented the data clustering
+algorithm.
+
+
+Difference Between KNN and K-Means
+KNN → Supervised learning and used for classification.
+K-Means → Unsupervised learning and used for clustering.
+
+Types:
+K-Means Clustering → Centroid based
+K-Medoids → Representative object based
+Agglomerative Clustering → Tree merging based
+Divisive Clustering → Tree splitting based
+DBSCAN → Density based
+Mean Shift → Mean point shifting based
+Gaussian Mixture Model → Probability distribution based

@@ -1,0 +1,63 @@
+PROBLEM STATEMENT:
+Develop a MapReduce program to find the grades of students.
+
+OBJECTIVE:
+1. Implement a MapReduce program to calculate grades for students based on their scores.
+2. Understand the distributed processing nature of MapReduce in the context of grading.
+
+Hardware Requirements
+• A cluster of machines for distributed processing (number of nodes depends on the scale of data).
+
+Software Requirements:
+• Hadoop (or any other MapReduce framework).
+
+Data set
+• Student data with scores (e.g., CSV file with student ID, name, and scores in different subjects).
+
+Libraries or modules used
+• Hadoop MapReduce libraries.
+
+Theory
+• MapReduce Paradigm
+MapReduce is a programming model and processing technique designed for large-scale data
+processing across distributed clusters. It divides a computational task into two main phases: the Map
+phase and the Reduce phase. In the context of grading students, MapReduce can efficiently handle the
+computation of average scores and assignment of grades across a large dataset.
+• Mapper Function
+The mapper function is responsible for processing each input record and emitting intermediate
+keyvalue pairs. In the case of student grading, the input data likely consists of records in the form of
+"student_name, subject, score." The mapper function extracts the relevant information, specifically the
+student name, subject, and score, and emits key-value pairs where the student name is the key and a
+tuple containing the subject and score is the value.
+• Shuffling and Sorting
+The framework automatically shuffles and sorts the intermediate key-value pairs, grouping them by
+key. In our student grading example, this means that all records related to a specific student are brought
+together, ready for processing in the next phase.
+• Reducer Function
+The reducer function takes the grouped key-value pairs and performs the necessary computations to
+determine the final output. In the context of grading students, the reducer calculates the average score
+for each student by iterating through the tuples of subjects and scores associated with that student.
+Once the average score is computed, the reducer assigns a grade based on predefined criteria (e.g., A
+for scores above 90, B for scores between 80 and 90, and so on). The final output of the reducer is a
+key-value pair where the key is the student name, and the value is the assigned grade.
+• Scalability and Parallel Processing
+One of the key strengths of MapReduce is its ability to scale horizontally, meaning it can efficiently
+process large datasets by distributing the computation across multiple nodes in a cluster. Each mapper
+and reducer operates independently on its subset of data, allowing for parallel processing and
+significantly reducing the time required for computation.
+• Flexibility and Extensibility
+The MapReduce model is flexible and extensible, making it suitable for a wide range of data
+processing tasks. In the student grading example, the same MapReduce framework can be adapted for
+different datasets and grading criteria by modifying the mapper and reducer functions.
+
+Algorithm of work
+• Map phase
+Read student data, emit student ID as the key, and scores as values.
+• Reduce phase
+Calculate grades based on scores and emit the final result.
+
+Applications
+• Use cases include automated grading systems for educational institutions.
+
+CONCLUSION:
+In this way we have develop a MapReduce program to find the grades of students.

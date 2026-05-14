@@ -1,0 +1,57 @@
+PROBLEM STATEMENT:
+Data Visualization from Extraction Transformation and Loading (ETL) Process.
+OBJECTIVE:
+1. To understand the concept of Data Visualization.
+2. To understand the Data Visualization using Power BI.
+THEORY:
+Data Visualization
+ Data visualization aims to communicate data clearly and effectively through graphical
+representation.
+ Data visualization has been used extensively in many applications for example, at work for
+reporting, managing business operations, and tracking progress of tasks.
+ More popularly, we can take advantage of visualization techniques to discover data
+relationships that are otherwise not easily observable by looking at the raw data.
+ Three major trends have shaped the direction of data visualization software.
+o More Chart Types. Most data visualizations are in the form of some standard chart type.
+The numerical results are converted into a pie chart, a scatter plot, or another chart type.
+Now the list of chart types supported by data visualization software has grown much
+longer.
+o Interactive Visualization. Visualizations are no longer static. Dynamic chart types are
+themselves user interfaces. Your users can review a result chart, manipulate it, and then
+see newer views online.
+o Visualization of Complex and Large Result Sets. You users can view a simple series of
+numeric result points as a rudimentary pie or bar chart. But newer visualization software
+can visualize thousands of result points and complex data structures.
+Drive better decision making with data visualization
+ See the big picture. There’s a clear picture of performance buried within the transaction,
+interaction, process, and behavioral data stored in your systems. Data visualization allows you
+to recognize the broader context and higher-level scenario within it. As a result, you’ll notice
+trends and spot patterns you wouldn't be able to see if you were looking at numbers on their
+own.
+Identify the significance. Bringing visual clarity to the story told within your data helps you
+identify insights that lead to better decision making, planning, strategies, and actions. How is
+your business performing, what needs to be modified, and where should you focus your
+resources? The ability to understand the significance of your data drives more effective
+operations and decisions.
+ Make informed decisions. With concrete numbers and tangible insights, you can be confident
+your decisions are backed by data. Having clear insight into performance metrics empowers
+you with the knowledge and arms you with the tools to make the right decisions at the right
+time.
+ Track trends over time. Once you've established a baseline, trends will begin to emerge.
+Track progress, spot trends, and begin using your insights to drive informed, strategic decisions.
+As you build your trends, shifts in patterns indicate if things drift off track, allowing you to
+immediately address any sign of lowered performance.
+Power BI Desktop lets you create a variety of visualizations to gain insights from your data. You can
+build reports with multiple pages and each page can have multiple visuals. You can interact with your
+visualizations to help analyze and understand your data in this task, you create a report based on the
+data previously loaded. You use the Fields pane to select the columns from which you create the
+visualizations.
+
+Following are the steps we have to follow to visualize data in Power BI
+ Load the data in Power BI by applying ETL process.
+ Select columns from Data section as shown in above figure which you want to display on chart.
+Select the required chart from Visualization section.
+Following output will get after selecting required visualization type.
+
+CONCLUSION
+In this way we have explored the concept of Data Visualization using Power BI

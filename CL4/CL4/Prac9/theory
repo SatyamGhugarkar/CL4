@@ -1,0 +1,60 @@
+PROBLEM STATEMENT:
+Perform the data classification algorithm using any Classification algorithm.
+
+OBJECTIVE:
+Students should be able understand the concept of data classification and different data
+classification algorithm.
+
+THEORY:
+Data Classification
+ Classification is a form of data analysis that extracts models describing important data classes.
+Such models, called classifiers, predict categorical (discrete, unordered) class labels.
+ For example, we can build a classification model to categorize bank loan applications as either
+safe or risky.
+ Data classification is a two-step process, consisting of a learning step (where a classification
+model is constructed) and a classification step (where the model is used to predict class labels
+for given data).
+
+KNN:
+K-Nearest Neighbors (KNN) is a supervised machine learning algorithm used for classification and prediction. It classifies a new data point based on the majority class of its nearest neighboring data points.
+
+The algorithm works by calculating the distance between the test data and all training data points. It then selects the nearest K neighbors and assigns the class that appears most frequently among them.
+
+KNN is called a lazy learning algorithm because it does not build a model during training; instead, it stores the dataset and performs computation during prediction.
+
+Steps of KNN Algorithm
+1. Load the dataset.
+2. Choose the value of K.
+3. Calculate the distance between test data and training data.
+4. Find the K nearest neighbors.
+5. Select the majority class among neighbors.
+6. Predict the output class.
+
+Advantages
+1. Simple and easy to understand.
+2. Works well for small datasets.
+3. No training phase required.
+
+Disadvantages
+1. Slow for large datasets.
+2. Performance depends on the value of K.
+3. Sensitive to noisy data.
+
+Applications
+Pattern recognition
+Recommendation systems
+Medical diagnosis
+Image classification
+Spam detection
+
+CONCLUSION
+In this way we have explored the concept of data classification and implemented the data
+classification algorithm.
+
+Other classification algo:
+KNN → Distance based
+Decision Tree → Rule based
+Random Forest → Multiple trees
+SVM → Boundary separation
+Naive Bayes → Probability based
+Neural Network → Deep learning based

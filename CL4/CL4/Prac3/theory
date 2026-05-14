@@ -1,0 +1,67 @@
+PROBLEM STATEMENT:
+Implement Matrix Multiplication using Map-Reduce.
+
+OBJECTIVE:
+1. Implement Matrix Multiplication using the Map-Reduce programming model.
+2. Understand the parallel processing capabilities of Map-Reduce for large-scale data.
+
+Software Requirements
+Hadoop (or any other Map-Reduce framework)
+
+Hardware Requirements
+A cluster of machines for distributed processing (number of nodes depends on the scale of data)
+
+Data set
+Input matrices for multiplication. This could be generated or sourced from real-world scenarios.
+
+Libraries/modules used
+Hadoop Map-Reduce libraries.
+
+Theory
+Matrix multiplication is a fundamental operation in linear algebra and is often used in various
+computational tasks. In the context of big data analysis, implementing matrix multiplication using
+MapReduce is an interesting and challenging task. MapReduce is a programming model commonly
+used for processing and generating large datasets in a distributed and parallel manner. Here's an
+overview of how you can implement matrix multiplication using MapReduce
+
+MapReduce Steps
+1. Map Step: -
+- Each Mapper takes a portion of Matrix A and Matrix B as input.
+- The key is the row index for Matrix A and column index for Matrix B.
+- The value is the corresponding element.
+Mapper 1:
+```
+Input: (i, A, aij)
+Output: [(j, ('A', i, aij))] # j is the column index of matrix B
+```
+Mapper 2:
+```
+Input: (j, B, bjk)
+Output: [(i, ('B', j, bjk))] # i is the row index of matrix A
+```
+2. Shuffle and Sort:
+- The framework groups the intermediate key-value pairs by key.
+3. Reduce Step: - Each Reducer receives a group of key-value pairs with the same key.
+- It multiplies the corresponding elements and sums up the products.
+Reducer:
+```
+Input: (j, [('A', i, aij), ('B', j, bjk), ...])
+Output: [(('A', i, aij), ('B', j, bjk)), ...]
+```
+4. Final Output:
+- The final output is a set of key-value pairs representing the result matrix.
+```
+Output: (i, j, Cij) # Cij is the element at row i and column j of the result matrix C
+
+Algorithm of work –
+• Divide the matrix multiplication into Map and Reduce phases.
+• Map phase: Emit intermediate key-value pairs for each element in the input matrices.
+• Shuffle and Sort phase: Group intermediate pairs by key (matrix element position).
+• Reduce phase: Perform the actual multiplication and summing to get the result.
+
+Applications
+• Use cases include large-scale scientific computations, machine learning algorithms, and data
+processing tasks where matrices are involved
+
+CONCLUSION:
+In this way we have Implemented Matrix Multiplication using Map-Reduce
